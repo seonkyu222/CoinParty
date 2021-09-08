@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="안녕 이건 내가 깃을 해보고 싶어서 하는거야!!!!!!!!"
+        android:text="아니 개빡치네 왜 안 되는데?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
