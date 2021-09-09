@@ -1,4 +1,4 @@
 package com.example.codingparty;
 
-public class LoginMain {
+public class SplashMain {
 }
