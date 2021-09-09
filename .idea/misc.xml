@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CoinParty/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_appbar_add_28px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_appbar_notification_28px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_attendance_qrcode_40px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_before_28px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_board_30px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_board_dot_18px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_board_folder_18px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_board_selected_30px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_button_filter_18px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_button_list_18px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/activity_main.xml" value="0.4" />
       </map>
     </option>
