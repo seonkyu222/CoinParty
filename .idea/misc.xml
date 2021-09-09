@@ -14,8 +14,13 @@
         <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_board_selected_30px.xml" value="0.26979166666666665" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_button_filter_18px.xml" value="0.26979166666666665" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_button_list_18px.xml" value="0.26979166666666665" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_home_30px.xml" value="0.14583333333333334" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_home_selected_30px.xml" value="0.14583333333333334" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_notice_16px.xml" value="0.14583333333333334" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_notice_44px.xml" value="0.14583333333333334" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
-        <entry key="..\:/CoinParty/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14583333333333334" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
     </option>
   </component>
