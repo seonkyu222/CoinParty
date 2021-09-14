@@ -8,14 +8,14 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
-public class activity_main_maybe extends AppCompatActivity {
+public class board_list extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_maybe);
+        setContentView(R.layout.borad_list);
 
         recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
