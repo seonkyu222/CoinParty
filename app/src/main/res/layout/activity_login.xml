@@ -25,6 +25,7 @@
             android:layout_marginRight="20dp"
             android:background="@color/white"
             android:hint="아이디"
+            android:textColor="#505050"
             android:padding="10dp" />
 
         <EditText
@@ -50,6 +51,27 @@
             app:backgroundTint="#DBDBDB"></Button>
 
     </LinearLayout>
+<!--텍스트 위로 밀리게 하기 -->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
 
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="44dp"-->
+<!--            android:hint="아이디"></com.google.android.material.textfield.TextInputEditText>-->
 
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="44dp"-->
+<!--            android:hint="비밀번호"></com.google.android.material.textfield.TextInputEditText>-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 </LinearLayout>
+

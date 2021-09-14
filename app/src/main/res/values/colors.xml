@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blueColor">#8DC5FF</color>
     <color name="loginBlue">#9DCDFF</color>
-    <color name="loginGray">#DBDBDB</color>
+    <color name="buttonGray">#DBDBDB</color>
+    <color name="buttonBlue">#3677DC</color>
 </resources>
