@@ -13,6 +13,9 @@
         <activity android:name=".activity_board_free" />
         <activity android:name=".board_main" />
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".board_list"/>
+        <activity android:name=".activity_board_free" />
+        <activity android:name=".board_main" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
