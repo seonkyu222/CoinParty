@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:id="@+id/ll_board_main"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -97,6 +98,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_free"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_marginLeft="25dp"
@@ -133,48 +135,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="bottom"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/ic_icon_home_30px"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></ImageView>
-
-        <ImageView
-            android:id="@+id/iv_shortcut"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:layout_marginStart="88dp"
-            android:src="@drawable/ic_icon_shortcut_30px"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView"></ImageView>
-
-        <ImageView
-            android:id="@+id/iv_board"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:layout_marginStart="176dp"
-            android:src="@drawable/ic_icon_board_selected_30px"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView"></ImageView>
-
-        <ImageView
-            android:id="@+id/iv_mypage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:layout_marginStart="264dp"
-            android:src="@drawable/ic_icon_mypage_30px"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView"></ImageView>
+        android:layout_weight="1"
+        android:background="#CADFDD">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     // bottom navi로 다시 만들기, 일단 보류
