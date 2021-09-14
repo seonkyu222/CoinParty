@@ -8,12 +8,4 @@
             </corners>
         </shape>
     </item>
-    <item android:state_active="true">
-        <shape>
-            <solid android:color="@color/buttonBlue">
-            </solid>
-            <corners android:radius="10dp">
-            </corners>
-        </shape>
-    </item>
 </selector>
