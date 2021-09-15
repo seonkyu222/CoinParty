@@ -1,32 +1,282 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-193dp">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="160px"
-        android:background="@color/main1"
-        android:text="   공지사항"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/notice1"
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:background="@color/main1"
+            android:drawableLeft="@drawable/ic_icon_notice_16px"
+            android:drawablePadding="4px"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="공지사항"
+            android:textColor="#FFFFFF"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/notice2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="100dp"
+            android:singleLine="true"
+            android:text="2월 개발계획 공지합니다.
+2월 1일 어쩌구~하시고
+        2월 16일부터 어쩌구~하시고
+        아 2월 17일 수강신청인데
+        나 이번에 교양못들으면 어떡하지
+        졸업해야되는데
+        암튼 공지임"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+        <View
+            android:id="@+id/division1"
+            android:layout_width="0.8pt"
+            android:layout_height="80px"
+            android:background="@color/main3"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            app:layout_constraintBottom_toBottomOf="@+id/notice1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toStartOf="@+id/notice1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.551"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <View
+            android:id="@+id/calandar_border_view"
+            android:elevation="5dp"
+            android:layout_width="375dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_round"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notice1"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/calandar_view"
+            android:layout_width="375dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/border_round2"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calandar_border_view" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:elevation="4dp"
+            android:layout_width="364dp"
+            android:layout_height="34dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="11 월요일"
+            android:textColor="#505050"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/calandar_view"
+            app:layout_constraintTop_toBottomOf="@+id/calandar_border_view"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+        <View
+            android:id="@+id/first_calendar_view"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border_round3"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.291"
+            app:layout_constraintStart_toStartOf="@+id/calandar_view"
+            app:layout_constraintTop_toBottomOf="@+id/date_text"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/first_calendar_text"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="동계 동아리 활동 13:00"
+            android:textColor="#505050"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/first_calendar_view"
+            app:layout_constraintEnd_toEndOf="@+id/calandar_view"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="@+id/calandar_view"
+            app:layout_constraintTop_toBottomOf="@+id/date_text"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+        <TextView
+            android:id="@+id/first_calendar_text2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_icon_calender_loop"
+            android:drawablePadding="8px"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:text="평일 반복"
+            android:textColor="#999999"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/first_calendar_view"
+            app:layout_constraintEnd_toEndOf="@+id/first_calendar_view"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+        <View
+            android:id="@+id/second_calendar_view"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border_round3"
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/calandar_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_text"
+            app:layout_constraintVertical_bias="0.491"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/second_calendar_text"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="COIN 동아리 어플 개발회의 13:30"
+            android:textColor="#505050"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/second_calendar_view"
+            app:layout_constraintStart_toStartOf="@+id/second_calendar_view"
+            app:layout_constraintTop_toTopOf="@+id/second_calendar_view"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+        <View
+            android:id="@+id/third_calendar_view"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border_round3"
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/calandar_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_text"
+            app:layout_constraintVertical_bias="0.919"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/third_calendar_text"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="동아리방 대청소 16:00"
+            android:textColor="#505050"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/third_calendar_view"
+            app:layout_constraintEnd_toEndOf="@+id/third_calendar_view"
+            app:layout_constraintStart_toStartOf="@+id/third_calendar_view"
+            app:layout_constraintTop_toBottomOf="@+id/second_calendar_view"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+        <View
+            android:id="@+id/chkborder1"
+            android:layout_width="188dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border_round2"
+            android:elevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calandar_view"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/check_text"
+            android:layout_width="189dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="7dp"
+            android:drawableTop="@drawable/ic_icon_attendance_qrcode_40px"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="출석체크"
+            android:textColor="#505050"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/chkborder1"
+            app:layout_constraintEnd_toStartOf="@+id/nameborder1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/chkborder1"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+        <View
+            android:id="@+id/nameborder1"
+            android:layout_width="176dp"
+            android:layout_height="252dp"
+            android:layout_marginStart="208dp"
+            android:layout_marginTop="248dp"
+            android:background="@drawable/border_round2"
+            android:elevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notice1"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <ListView
+            android:id="@+id/name_list_view"
+            android:layout_width="176dp"
+            android:layout_height="252dp"
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nameborder1"
+            app:layout_constraintEnd_toEndOf="@+id/nameborder1"
+            app:layout_constraintStart_toStartOf="@+id/nameborder1"
+            app:layout_constraintTop_toTopOf="@+id/nameborder1"
+            tools:ignore="MissingConstraints">
+        </ListView>
+
+        
 
 
-    <ImageView
-        android:layout_width="50px"
-        android:layout_height="50px"
-        android:background="@drawable/ic_icon_notice_16px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="33dp"></ImageView>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
