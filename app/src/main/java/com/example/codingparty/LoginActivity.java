@@ -8,12 +8,8 @@ import android.text.TextWatcher;
 import android.widget.Button;
 import android.widget.EditText;
 
-<<<<<<< HEAD:app/src/main/java/com/example/codingparty/LoginActivity.java
-public class LoginActivity extends AppCompatActivity {
-=======
 
-public class MainActivity extends AppCompatActivity {
->>>>>>> f5bcc6a5d912367db83d4bcf9cb1396458961fd7:app/src/main/java/com/example/codingparty/MainActivity.java
+public class LoginActivity extends AppCompatActivity {
     private EditText user_id;
     private EditText user_pwd;
     private Button login_btn;
@@ -22,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_board_main);
+        setContentView(R.layout.activity_login);
 
         user_id = findViewById(R.id.user_id);
         user_pwd = findViewById(R.id.user_pwd);
@@ -53,4 +49,4 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
-    }
+}
