@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_board_main);
 
-        user_pwd =  findViewById(R.id.user_pwd);
+/*        user_pwd =  findViewById(R.id.user_pwd);
         button_login=findViewById(R.id.button_login);
 
 
@@ -46,6 +46,6 @@ public class MainActivity extends AppCompatActivity {
                     button_login.setBackgroundColor(Color.GRAY);
                 }
             }
-        });
+        }); */
     }
 }
