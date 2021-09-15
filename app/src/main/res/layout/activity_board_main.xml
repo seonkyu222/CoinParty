@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:id="@+id/ll_board_main"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".board_main">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="9">
 
         <LinearLayout
             android:orientation="vertical"
@@ -97,6 +94,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_free"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_marginLeft="25dp"
@@ -120,65 +118,20 @@
                 </TextView>
 
             </LinearLayout>
-            
-            
-            
-        </LinearLayout>
-        
 
+        </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/my_navigation_items"
+        tools:context=".bottom_navi">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     </FrameLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="bottom"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/ic_icon_home_30px"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></ImageView>
-
-        <ImageView
-            android:id="@+id/iv_shortcut"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:layout_marginStart="88dp"
-            android:src="@drawable/ic_icon_shortcut_30px"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView"></ImageView>
-
-        <ImageView
-            android:id="@+id/iv_board"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:layout_marginStart="176dp"
-            android:src="@drawable/ic_icon_board_selected_30px"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView"></ImageView>
-
-        <ImageView
-            android:id="@+id/iv_mypage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:layout_marginStart="264dp"
-            android:src="@drawable/ic_icon_mypage_30px"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView"></ImageView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    // bottom navi로 다시 만들기, 일단 보류
-
-
-
-</LinearLayout>

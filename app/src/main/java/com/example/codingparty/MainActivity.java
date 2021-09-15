@@ -9,6 +9,7 @@ import android.text.TextWatcher;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 public class MainActivity extends AppCompatActivity {
     private EditText user_id;
     private EditText user_pwd;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_board_main);
 
         user_id = findViewById(R.id.user_id);
         user_pwd = findViewById(R.id.user_pwd);
@@ -49,4 +50,4 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
-}
+    }
