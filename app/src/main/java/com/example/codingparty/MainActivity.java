@@ -2,24 +2,30 @@ package com.example.codingparty;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toolbar;
 
 
 public class MainActivity extends AppCompatActivity {
      EditText user_pwd;
     Button button_login;
+    Toolbar myToolbar;
 
 
+    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        setSupportActionBar(myToolbar);
 
 
 /*        user_pwd =  findViewById(R.id.user_pwd);
@@ -51,4 +57,8 @@ public class MainActivity extends AppCompatActivity {
         }); */
 
     }
+
+    private void setSupportActionBar(Toolbar myToolbar) {
+    }
+
 }

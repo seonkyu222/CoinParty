@@ -26,11 +26,13 @@
         <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14583333333333334" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/menu_selector_color.xml" value="0.23981481481481481" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/upper_shadow_todo.xml" value="0.14583333333333334" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/activity_board_main.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/activity_bottom_navi.xml" value="0.22546296296296298" />
-        <entry key="..\:/CoinParty/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/border_round.xml" value="0.2390625" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/layout_background.xml" value="0.25364583333333335" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/splash_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/toorbar_main.xml" value="0.4" />
       </map>
     </option>
   </component>
@@ -40,14 +42,4 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.13333333333333333" />
-      </ProjectState>
-    </option>
-  </component>
->>>>>>> 3ad5c4a690080fc29fd04a3dc672ee22f4ad53a2
 </project>
