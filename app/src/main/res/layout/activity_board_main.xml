@@ -21,8 +21,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="20dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="20dp"
                 android:gravity="center_vertical"
                 android:background="@drawable/list_line">
 
@@ -46,8 +46,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="20dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="20dp"
                 android:gravity="center_vertical"
                 android:background="@drawable/list_line">
 
@@ -71,8 +71,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="20dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="20dp"
                 android:gravity="center_vertical"
                 android:background="@drawable/list_line">
 
@@ -97,8 +97,8 @@
                 android:id="@+id/ll_free"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="20dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="20dp"
                 android:gravity="center_vertical"
                 android:background="@drawable/list_line">
 
@@ -121,17 +121,5 @@
 
         </LinearLayout>
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="#FFFFFF"
-        app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/my_navigation_items"
-        tools:context=".bottom_navi">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     </FrameLayout>
