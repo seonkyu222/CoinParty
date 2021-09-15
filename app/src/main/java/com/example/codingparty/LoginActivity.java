@@ -2,7 +2,6 @@ package com.example.codingparty;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -10,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     private EditText user_id;
     private EditText user_pwd;
     private Button login_btn;
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_board_main);
+        setContentView(R.layout.activity_login);
 
         user_id = findViewById(R.id.user_id);
         user_pwd = findViewById(R.id.user_pwd);
@@ -50,4 +49,4 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
-    }
+}
