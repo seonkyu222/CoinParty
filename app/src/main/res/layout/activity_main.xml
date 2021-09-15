@@ -9,6 +9,7 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-193dp">
 
+<<<<<<< HEAD
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -29,6 +30,8 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="TextContrastCheck" />
+=======
+>>>>>>> 3ad5c4a690080fc29fd04a3dc672ee22f4ad53a2
 
         <TextView
             android:id="@+id/notice2"
