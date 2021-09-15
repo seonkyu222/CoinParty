@@ -13,7 +13,7 @@ import android.widget.Toolbar;
 
 
 public class MainActivity extends AppCompatActivity {
-     EditText user_pwd;
+    EditText user_pwd;
     Button button_login;
     Toolbar myToolbar;
 
@@ -30,20 +30,13 @@ public class MainActivity extends AppCompatActivity {
 
 /*        user_pwd =  findViewById(R.id.user_pwd);
         button_login=findViewById(R.id.button_login);
-
-
-
         user_pwd.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
             }
-
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
             }
-
             @Override
             public void afterTextChanged(Editable editable) {
                 if (editable.length() > 0) {

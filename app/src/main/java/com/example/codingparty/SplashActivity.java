@@ -3,12 +3,8 @@ package com.example.codingparty;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
-
-import javax.security.auth.login.LoginException;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -23,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private class SplashHandler implements Runnable {
         public void run(){
-            startActivity(new Intent(getApplication(),MainActivity.class));
+            startActivity(new Intent(getApplication(), LoginActivity.class));
             SplashActivity.this.finish();
         }
     }
