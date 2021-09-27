@@ -3,8 +3,8 @@
     android:id="@+id/ll_study"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:layout_marginLeft="25dp"
-    android:layout_marginRight="20dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="20dp"
     android:background="@drawable/list_line"
     android:gravity="center_vertical">
 
