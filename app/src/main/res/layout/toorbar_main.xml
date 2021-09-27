@@ -15,18 +15,18 @@
         <ImageView
             android:id="@+id/iv_menu"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             android:paddingLeft="20dp"
             app:srcCompat="@drawable/ic_icon_sidebar_28px"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            app:srcCompat="@drawable/ic_icon_appbar_notification_28px"
             android:layout_width="52dp"
             android:layout_height="30dp"
             android:layout_alignParentTop="true"
@@ -34,6 +34,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_icon_appbar_notification_28px"
             tools:ignore="VectorDrawableCompat"></ImageView>
 
         <ImageView
