@@ -1,5 +1,6 @@
 package com.example.codingparty;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -15,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toolbar;
 
+import com.google.android.material.navigation.NavigationView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Button button_login;
     Toolbar myToolbar;
     private ListView list1;
+    private ListView list2;
 
 
     @SuppressLint({"NewApi", "WrongViewCast"})
@@ -31,19 +35,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setSupportActionBar(myToolbar);
+
+
 
         list1 = (ListView)findViewById(R.id.list1);
         List<String> data = new ArrayList<>();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
         list1.setAdapter(adapter);
 
-        data.add("asdf");
-        data.add("안녕하세여");
-        data.add("안녕하세여");
-        data.add("안녕하세여");
+
+        data.add("김석환");
+        data.add("임진우");
+        data.add("한지수");
+        data.add("박정혁");
+        data.add("금도현");
+        data.add("최이슬");
         adapter.notifyDataSetChanged();
 
+
+    }
 
 
 
@@ -73,7 +83,3 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void setSupportActionBar(Toolbar myToolbar) {
-    }
-
-}

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CodingParty</string>
+    <string name="open" />
+    <string name="closed" />
 </resources>
