@@ -8,27 +8,26 @@ import android.os.Bundle;
 import android.widget.Adapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class activity_board_free extends AppCompatActivity {
 
-    ArrayList<String> title;
+
+    RecyclerView recyclerView;
+    LinearLayoutManager mLinearLayoutManager;
+    ItemAdapter adapter;
+    List<Item> itemList = new ArrayList<Item>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board_free);
 
-        title = new ArrayList<>();
-        title.add("우에엥 1");
-        title.add("뿌에엥 2");
-        title.add("무에엥 3");
-        title.add("끼에엥 4");
+        recyclerView = findViewById(R.id.recyclerview);
+        mLinearLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(mLinearLayoutManager);
 
-        freeAdapter adapter = new freeAdapter(title);
-        RecyclerView recyclerView = findViewById(R.id.recyclerview);
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
 
 
 
