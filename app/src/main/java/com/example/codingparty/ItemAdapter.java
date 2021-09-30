@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -36,12 +37,13 @@ public abstract class ItemAdapter extends RecyclerView.Adapter<RecyclerView.View
         return new ViewHolderder(v); //너 머야 왜구래 우리 친하게 지내!!
     }
 
-    @Override
+ //   @Override
     public void onBindViewHolder(@NonNull @NotNull ItemAdapter.ViewHolderder holder, int position) {
 
         final Item item = items.get(position);
         holder.tv_title.setText(item.getTitle());
     }
+
 
     @Override
     public int getItemCount() {

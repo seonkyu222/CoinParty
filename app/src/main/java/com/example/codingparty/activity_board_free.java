@@ -12,7 +12,6 @@ import java.util.List;
 
 public class activity_board_free extends AppCompatActivity {
 
-
     RecyclerView recyclerView;
     LinearLayoutManager mLinearLayoutManager;
     ItemAdapter adapter;
@@ -27,6 +26,9 @@ public class activity_board_free extends AppCompatActivity {
         mLinearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(mLinearLayoutManager);
+
+
+
 
 
 
