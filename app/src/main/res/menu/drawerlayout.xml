@@ -2,27 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menuitem1"
-        android:title="Main" />
+        android:id="@+id/menu_item1"
+        android:title="메뉴 아이템 1" />
     <item
-        android:id="@+id/menuitem2"
-        android:title="공지사항" />
+        android:id="@+id/menu_item2"
+        android:title="메뉴 아이템 2" />
     <item
-        android:id="@+id/menuitem3"
-        android:title="캘린더" />
-    <item
-        android:id="@+id/menuitem4"
-        android:title="출석" />
-    <item
-        android:id="@+id/menuitem5"
-        android:title="비품관리" />
-    <item
-        android:id="@+id/menuitem6"
-        android:title="게시판" />
-    <item
-        android:id="@+id/menuitem7"
-        android:title="Google Drive" />
-    <item
-        android:id="@+id/menuitem8"
-        android:title="Git?" />
+        android:id="@+id/menu_item3"
+        android:title="메뉴 아이템 3" />
 </menu>

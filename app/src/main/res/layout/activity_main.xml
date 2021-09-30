@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/drawer"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,31 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.drawerlayout.widget.DrawerLayout
-            android:id="@+id/drawer_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            tools:ignore="SpeakableTextPresentCheck"
-            tools:openDrawer="start"></androidx.drawerlayout.widget.DrawerLayout>
+
 
         <include
             android:id="@+id/include"
-            layout="@layout/toorbar_main"
+            layout="@layout/toolbar_main"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-        </include>
-
-        <com.google.android.material.navigation.NavigationView
-            app:headerLayout="@layout/header_menu"
-            app:menu="@menu/drawerlayout"
-            android:fitsSystemWindows="true"
-            android:id="@+id/nav_view"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            tools:ignore="MissingConstraints">
-        </com.google.android.material.navigation.NavigationView>
+            app:layout_constraintTop_toTopOf="parent"></include>
 
 
         <TextView
@@ -327,6 +310,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:elevation="4dp"
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

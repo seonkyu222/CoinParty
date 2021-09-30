@@ -12,7 +12,7 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Item"
-        android:textSize="50dp" />
+        android:text="Side NavBar"
+        android:textSize="30dp" />
 
 </LinearLayout>
