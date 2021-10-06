@@ -16,7 +16,6 @@ public class SplashActivity extends AppCompatActivity {
         Handler hd = new Handler();
         hd.postDelayed(new SplashHandler(),3000);
     }
-
     private class SplashHandler implements Runnable {
         public void run(){
             startActivity(new Intent(getApplication(), LoginActivity.class));
