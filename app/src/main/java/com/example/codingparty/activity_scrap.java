@@ -12,25 +12,17 @@ import java.util.List;
 
 public class activity_scrap extends AppCompatActivity {
 
-    ListView list;
+    private ListView listView;
+    private ScrapListAdapter adapter;
 
-    @SuppressLint({"NewApi", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrap);
-        list=(ListView) findViewById((R.id.list));
-        List<String> data = new ArrayList<>();
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
-        list.setAdapter(adapter);
+        listView = (ListView) findViewById(R.id.list);
+        adapter = new ScrapListAdapter(activity_scrap.this);
+        listView.setAdapter(adapter);
 
-        data.add("김석환");
-        data.add("임진우");
-        data.add("한지수");
-        data.add("박정혁");
-        data.add("금도현");
-        data.add("최이슬");
         adapter.notifyDataSetChanged();
-
     }
 }

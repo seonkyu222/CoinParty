@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".board_main">
+    tools:context=".board_main"
+    android:background="@color/white">
 
 
     <LinearLayout
@@ -16,7 +17,7 @@
 
         <include
             android:id="@+id/include"
-            layout="@layout/toorbar_main"
+            layout="@layout/toolbar_main"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">

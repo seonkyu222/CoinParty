@@ -17,7 +17,7 @@ public class myPageFragment extends Fragment {
     @org.jetbrains.annotations.Nullable
     @Override
     public View onCreateView(@NonNull @NotNull LayoutInflater inflater, @Nullable @org.jetbrains.annotations.Nullable ViewGroup container, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_board_main,container,false);
+        return inflater.inflate(R.layout.activity_mypage,container,false);
         //레이아웃 수정
 
     }
