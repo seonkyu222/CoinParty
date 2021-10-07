@@ -25,13 +25,23 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 public class MainActivity extends AppCompatActivity {
+
     Fragment menu1Fragment;
     Fragment menu2Fragment;
     Fragment menu3Fragment;
     Fragment menu4Fragment;
 
+    EditText user_pwd;
+    Button button_login;
+    Toolbar myToolbar;
+    private ListView list1;
+    private ListView list2;
 
     private class Menu1Fragment extends Fragment {
     }
@@ -62,18 +72,6 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     };
-import com.google.android.material.navigation.NavigationView;
-
-import java.util.ArrayList;
-import java.util.List;
-
-
-public class MainActivity extends AppCompatActivity {
-    EditText user_pwd;
-    Button button_login;
-    Toolbar myToolbar;
-    private ListView list1;
-    private ListView list2;
 
 
     @SuppressLint({"NewApi", "WrongViewCast"})
@@ -103,15 +101,21 @@ public class MainActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
 
-    }
+        menu1Fragment = new mainFragment();
+        menu2Fragment = new equipmentFragment();
+        menu3Fragment = new boardFragment();
+        menu4Fragment = new myPageFragment();
 
-    private void setSupportActionBar(Toolbar viewById) {
-    }
-
-}
 
         getSupportFragmentManager().beginTransaction().replace(R.id.activity_main,menu1Fragment).commit();
 
-    private void setSupportActionBar(Toolbar myToolbar) {
+
+
     }
-}
+
+    private void setSupportActionBar(Toolbar myToolbar) {
+    };
+
+};
+
+

@@ -20,43 +20,43 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scrap);
+        setContentView(R.layout.activity_login);
 
-//        user_id = findViewById(R.id.user_id);
-//        user_pwd = findViewById(R.id.user_pwd);
-//        login_btn = findViewById(R.id.button_login);
-//
-//        user_id.addTextChangedListener(loginTextWatcher);
-//        user_pwd.addTextChangedListener(loginTextWatcher);
-//
-//        login_btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        user_id = findViewById(R.id.user_id);
+        user_pwd = findViewById(R.id.user_pwd);
+        login_btn = findViewById(R.id.button_login);
+
+        user_id.addTextChangedListener(loginTextWatcher);
+        user_pwd.addTextChangedListener(loginTextWatcher);
+
+        login_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
-//    private TextWatcher loginTextWatcher = new TextWatcher() {
-//        @Override
-//        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//        }
-//
-//        @Override
-//        public void onTextChanged(CharSequence s, int start, int before, int count) {
-//            String idInput = user_id.getText().toString().trim();
-//            String pwdInput = user_pwd.getText().toString().trim();
-//            if(!idInput.isEmpty() && !pwdInput.isEmpty()){
-//                login_btn.setBackground(getResources().getDrawable(R.drawable.round_button_after));
-//            }else {
-//                login_btn.setBackground(getResources().getDrawable(R.drawable.round_button));
-//            }
-//        }
-//
-//        @Override
-//        public void afterTextChanged(Editable s) {
-//
-//        }
-//    };
+    private TextWatcher loginTextWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+            String idInput = user_id.getText().toString().trim();
+            String pwdInput = user_pwd.getText().toString().trim();
+            if(!idInput.isEmpty() && !pwdInput.isEmpty()){
+                login_btn.setBackground(getResources().getDrawable(R.drawable.round_button_after));
+            }else {
+                login_btn.setBackground(getResources().getDrawable(R.drawable.round_button));
+            }
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    };
 }
