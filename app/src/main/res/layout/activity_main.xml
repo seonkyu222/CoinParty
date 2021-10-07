@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+             
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,6 +14,16 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></include>
+
 
         <TextView
             android:id="@+id/notice1"
@@ -267,19 +278,40 @@
             app:layout_constraintTop_toBottomOf="@+id/calandar_view"
             tools:ignore="MissingConstraints"></View>
 
-        <include
-            android:id="@+id/include"
-            layout="@layout/toorbar_main"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
 
-        </include>
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="88dp"
+            android:layout_height="252dp"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/nameborder1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.645"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nameborder1"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"></ListView>
+
+        <ListView
+            android:id="@+id/list2"
+            android:layout_width="88dp"
+            android:layout_height="252dp"
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nameborder1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.934"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nameborder1"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"></ListView>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:elevation="4dp"
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
