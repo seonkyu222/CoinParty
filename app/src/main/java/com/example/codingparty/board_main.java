@@ -28,13 +28,7 @@ public class board_main extends AppCompatActivity {
         setContentView(R.layout.activity_board_main);
 
         layout_suggest = (LinearLayout) findViewById(R.id.ll_suggest);
-
-        layout_suggest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        testt = (Button) findViewById(R.id.test);
 
         layout_suggest.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,5 +39,16 @@ public class board_main extends AppCompatActivity {
 
             }
         });
+
+        testt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "buttoninininiin");
+                Intent intent = new Intent(getApplicationContext(), BoardSuggest.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
