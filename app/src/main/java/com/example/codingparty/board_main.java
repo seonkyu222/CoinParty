@@ -16,34 +16,18 @@ import static android.content.ContentValues.TAG;
 public class board_main extends AppCompatActivity {
 
     private class Menu2Fragment extends Fragment {
+
+
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_board_main);
+
+
+
+        }
+
     }
 
-    private LinearLayout layout_suggest;
-    Button testt;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        Log.e(TAG, "InBoardMain");
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_board_main);
-
-        layout_suggest = (LinearLayout) findViewById(R.id.ll_suggest);
-
-        layout_suggest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        layout_suggest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "ininininin");
-                Intent intent = new Intent(getApplicationContext(), BoardSuggest.class);
-                startActivity(intent);
-
-            }
-        });
-    }
 }
