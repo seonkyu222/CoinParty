@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CodingParty">
-        <activity android:name=".bottom_navi"></activity>
+        <activity android:name=".EquipmentMain"></activity>
+        <activity android:name=".BoardSuggest" />
+        <activity android:name=".bottom_navi" />
         <activity android:name=".board_list" />
         <activity android:name=".activity_board_free" />
         <activity android:name=".board_main" />
