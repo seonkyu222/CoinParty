@@ -8,21 +8,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-193dp">
 
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.drawerlayout.widget.DrawerLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
-        <include
+            <include
             android:id="@+id/include"
-            layout="@layout/toolbar_main"
+            layout="@layout/app_bar_main"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></include>
+            app:layout_constraintTop_toTopOf="parent">
+            </include>
 
 
         <TextView
@@ -309,6 +317,7 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:elevation="4dp"

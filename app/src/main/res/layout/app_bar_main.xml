@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.Toolbar
-    android:id="@+id/toolbar"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,12 +9,29 @@
     android:background="@color/white">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:contentInsetStart="0dp"
+                tools:ignore="NewApi">
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
 
         <ImageButton
-            android:background="@color/white"
+            android:elevation="4dp"
             android:id="@+id/iv_menu"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -25,12 +41,13 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
+
             android:paddingLeft="0dp"
             app:srcCompat="@drawable/ic_icon_sidebar_28px"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageButton
-            android:background="@color/white"
+            android:elevation="4dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
@@ -39,10 +56,13 @@
             android:layout_marginTop="0dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="0dp"
+
+            app:layout_anchorGravity="end|center"
             app:srcCompat="@drawable/ic_icon_appbar_notification_28px"
             tools:ignore="VectorDrawableCompat"></ImageButton>
 
         <ImageView
+            android:elevation="4dp"
             android:layout_width="157dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -52,20 +72,8 @@
             app:srcCompat="@drawable/ic_logo_appbar"
             tools:ignore="VectorDrawableCompat"></ImageView>
 
-        <TextView
-            android:id="@+id/tv_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:gravity="center"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
 
     </RelativeLayout>
-</androidx.appcompat.widget.Toolbar>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
