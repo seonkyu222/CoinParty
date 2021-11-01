@@ -8,15 +8,15 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-193dp">
 
     <androidx.drawerlayout.widget.DrawerLayout
+        tools:openDrawer="start"
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </androidx.drawerlayout.widget.DrawerLayout>
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -31,6 +31,16 @@
             app:layout_constraintTop_toTopOf="parent">
             </include>
 
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/notice1"
@@ -290,7 +300,7 @@
             android:id="@+id/list1"
             android:layout_width="88dp"
             android:layout_height="252dp"
-            android:elevation="4dp"
+            android:elevation="5dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="@+id/nameborder1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -304,7 +314,7 @@
             android:id="@+id/list2"
             android:layout_width="88dp"
             android:layout_height="252dp"
-            android:elevation="4dp"
+            android:elevation="5dp"
             app:layout_constraintBottom_toBottomOf="@+id/nameborder1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.934"
@@ -316,7 +326,7 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
+    </androidx.drawerlayout.widget.DrawerLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:elevation="4dp"

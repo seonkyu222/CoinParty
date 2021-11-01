@@ -9,6 +9,9 @@ import android.widget.ListView;
 import android.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,12 +23,15 @@ public class MainActivity extends AppCompatActivity {
     Toolbar myToolbar;
     private ListView list1;
     private ListView list2;
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
 
     @SuppressLint({"NewApi", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         list1 = (ListView) findViewById(R.id.list1);
