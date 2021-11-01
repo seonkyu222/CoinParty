@@ -14,10 +14,12 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.AppBarLayout
+            android:theme="@style/Theme.NaviExample.AppBarOverlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.Toolbar
+                app:popupTheme="@style/Theme.NaviExample.PopupOverlay"
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -30,7 +32,9 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <ImageButton
+
+
+        <ImageView
             android:elevation="4dp"
             android:id="@+id/iv_menu"
             android:layout_width="wrap_content"
@@ -41,12 +45,11 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
-
             android:paddingLeft="0dp"
             app:srcCompat="@drawable/ic_icon_sidebar_28px"
             tools:ignore="VectorDrawableCompat" />
 
-        <ImageButton
+        <ImageView
             android:elevation="4dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -56,10 +59,9 @@
             android:layout_marginTop="0dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="0dp"
-
             app:layout_anchorGravity="end|center"
             app:srcCompat="@drawable/ic_icon_appbar_notification_28px"
-            tools:ignore="VectorDrawableCompat"></ImageButton>
+            tools:ignore="VectorDrawableCompat"></ImageView>
 
         <ImageView
             android:elevation="4dp"

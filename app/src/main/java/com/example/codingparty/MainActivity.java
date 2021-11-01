@@ -23,7 +23,14 @@ import android.widget.ListView;
 import android.widget.Toolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+<<<<<<< HEAD
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
+=======
 import org.jetbrains.annotations.NotNull;
+>>>>>>> f56ab679d0487fc2aeb5c2b6be6cbea20f089406
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
     Toolbar myToolbar;
     private ListView list1;
     private ListView list2;
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
 
     private class Menu1Fragment extends Fragment {
     }
@@ -83,10 +92,14 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.bottom_navigation);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+<<<<<<< HEAD
+
+=======
         menu1Fragment = new mainFragment(); //메인
         menu2Fragment = new equipmentFragment(); //비품관리
         menu3Fragment = new boardFragment(); //보드
         menu4Fragment = new myPageFragment(); //마이페이지
+>>>>>>> f56ab679d0487fc2aeb5c2b6be6cbea20f089406
         list1 = (ListView) findViewById(R.id.list1);
         List<String> data = new ArrayList<>();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
