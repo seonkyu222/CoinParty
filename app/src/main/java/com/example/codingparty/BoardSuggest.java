@@ -3,6 +3,7 @@ package com.example.codingparty;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -16,6 +17,8 @@ public class BoardSuggest extends AppCompatActivity {
 
         ListView listView;
         SuggestAdapter adapter;
+
+        Intent intent = getIntent();
 
         // Adapter 생성
         adapter = new SuggestAdapter();

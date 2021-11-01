@@ -100,15 +100,12 @@ public class MainActivity extends AppCompatActivity {
         data.add("최이슬");
         adapter.notifyDataSetChanged();
 
-
         menu1Fragment = new mainFragment();
         menu2Fragment = new equipmentFragment();
         menu3Fragment = new boardFragment();
         menu4Fragment = new myPageFragment();
 
-
         getSupportFragmentManager().beginTransaction().replace(R.id.activity_main,menu1Fragment).commit();
-
 
 
     }
