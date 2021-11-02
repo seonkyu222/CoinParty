@@ -4,12 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BoardSuggest">
+    tools:context=".BoardSuggest"
+    android:layout_marginHorizontal="25dp">
 
+<<<<<<< HEAD
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:duplicateParentState="true"
+        android:scrollbars="none">
+=======
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="50sp"
         android:text="건의하기"></TextView>
+>>>>>>> 1f02683ee1b51167ddc9e4e2e5d16baad7bfb3d5
 
+<<<<<<< HEAD
+    </ListView>
+
+=======
+>>>>>>> 53a15fb951ce4c818e485bde069f5cead7877eaf
 </LinearLayout>

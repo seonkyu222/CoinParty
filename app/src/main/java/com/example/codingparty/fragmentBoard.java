@@ -38,9 +38,6 @@ public class fragmentBoard extends Fragment implements View.OnClickListener {
         layoutFree.setOnClickListener(this);
 
 
-
-
-
         return view;
     }
 
@@ -51,7 +48,6 @@ public class fragmentBoard extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
 
             case R.id.ll_contest:
-                Log.i(TAG, "in case1");
                 Intent intent_c = new Intent(getActivity().getApplicationContext(), BoardContest.class);
                 startActivity(intent_c);
                 break;
@@ -71,9 +67,6 @@ public class fragmentBoard extends Fragment implements View.OnClickListener {
                 startActivity(intent_f);
                 break;
         }
-
-
-
 
 
 
