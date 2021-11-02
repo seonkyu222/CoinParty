@@ -18,7 +18,6 @@ public class fragmentBoard extends Fragment implements View.OnClickListener {
 
     private View view;
     private String TAG = "boardFragment";
-    private LinearLayout ll_suggest;
 
     @Nullable
     @Override
@@ -26,17 +25,57 @@ public class fragmentBoard extends Fragment implements View.OnClickListener {
         Log.i(TAG,"bf_onCreate");
         view = inflater.inflate(R.layout.activity_board_main,container,false);
 
-        LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.ll_suggest);
-        linearLayout.setOnClickListener(this);
+        LinearLayout layoutContest = (LinearLayout) view.findViewById(R.id.ll_contest);
+        layoutContest.setOnClickListener(this::onClick);
+
+        LinearLayout layoutQna = (LinearLayout) view.findViewById(R.id.ll_qna);
+        layoutQna.setOnClickListener(this);
+
+        LinearLayout layoutSuggest = (LinearLayout) view.findViewById(R.id.ll_suggest);
+        layoutSuggest.setOnClickListener(this);
+
+        LinearLayout layoutFree = (LinearLayout) view.findViewById(R.id.ll_free) ;
+        layoutFree.setOnClickListener(this);
+
+
+
+
 
         return view;
     }
 
     @Override
     public void onClick(View v) {
-        Log.i(TAG, "board 클릭 in");
-        Intent intent = new Intent(getActivity().getApplicationContext(), BoardSuggest.class);
-        startActivity(intent);
+        Log.i(TAG, "in onClick");
+
+        switch (v.getId()) {
+
+            case R.id.ll_contest:
+                Log.i(TAG, "in case1");
+                Intent intent_c = new Intent(getActivity().getApplicationContext(), BoardContest.class);
+                startActivity(intent_c);
+                break;
+
+            case R.id.ll_qna:
+                Intent intent_q = new Intent(getActivity().getApplicationContext(), BoardQna.class);
+                startActivity(intent_q);
+                break;
+
+            case R.id.ll_suggest:
+                Intent intent_s = new Intent(getActivity().getApplicationContext(), BoardSuggest.class);
+                startActivity(intent_s);
+                break;
+
+            case R.id.ll_free:
+                Intent intent_f = new Intent(getActivity().getApplicationContext(), BoardFree.class);
+                startActivity(intent_f);
+                break;
+        }
+
+
+
+
+
 
         }
 }

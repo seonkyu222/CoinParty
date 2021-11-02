@@ -30,11 +30,12 @@
             android:paddingLeft="25dp"
             android:paddingRight="20dp">
 
-            <include layout="@layout/list_header" android:id="@+id/ll_study">
+<!--            <include layout="@layout/list_header" android:id="@+id/ll_study">-->
 
-            </include>
+<!--            </include>-->
 
             <LinearLayout
+                android:id="@+id/ll_contest"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:gravity="center_vertical"
@@ -58,6 +59,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_qna"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:gravity="center_vertical"
