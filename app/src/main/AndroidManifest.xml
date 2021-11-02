@@ -9,15 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CodingParty">
-        <activity android:name=".EquipmentMain"></activity>
+        <activity android:name=".BoardQna"></activity>
         <activity android:name=".BoardSuggest" />
+        <activity android:name=".BoardContest" />
+        <activity android:name=".BoardFree" />
+        <activity android:name=".EquipmentMain" />
         <activity android:name=".bottom_navi" />
-        <activity android:name=".board_list" />
         <activity android:name=".activity_board_free" />
         <activity android:name=".board_main" />
         <activity android:name=".LoginActivity" />
+<<<<<<< HEAD
         <activity android:name=".MainActivity"/>
         <activity android:name=".activity_mypage"/>
+=======
+        <activity android:name=".MainActivity" />
+>>>>>>> 53a15fb951ce4c818e485bde069f5cead7877eaf
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
