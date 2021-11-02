@@ -19,7 +19,7 @@
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:textSize="18dp"
-            android:text="어제 내 세상이 무너졌어"
+            android:text="test"
             android:textColor="#191919"/>
 
         <TextView
@@ -29,7 +29,7 @@
             android:layout_marginLeft="20dp"
             android:textSize="11dp"
             android:layout_weight="1"
-            android:text="임진우ㆍ1시간 전"
+            android:text="테스트입니다."
             android:textColor="#767676"/>
     </LinearLayout>
 
