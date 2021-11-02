@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_mypage"
+    tools:context=".fragmentMyPage"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-193dp"
     android:background="@color/white"
