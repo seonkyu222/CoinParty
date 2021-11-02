@@ -108,6 +108,7 @@
                 android:paddingRight="10px"
                 android:src="@drawable/ic_icon_mypage_bookmark_24px">
             </ImageView>
+
             <Button
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:id="@+id/scrap"
@@ -121,6 +122,7 @@
                 android:text="스크랩한 게시글"
                 >
             </Button>
+
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
