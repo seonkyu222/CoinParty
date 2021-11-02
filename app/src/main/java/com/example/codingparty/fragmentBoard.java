@@ -70,8 +70,5 @@ public class fragmentBoard extends Fragment implements View.OnClickListener {
 
 
 
-
-
-
         }
 }

@@ -25,9 +25,12 @@ public class BoardSuggest extends AppCompatActivity {
 
         SuggestAdapter mMyAdapter = new SuggestAdapter();
 
-
+        int time = 0;
         for (int i=0; i<20; i++) {
-            mMyAdapter.addItem("건의합니다!!" + i,i + "시간 전" );
+            time += 1;
+            mMyAdapter.addItem("건의할게욥!!",time + "시간 전" );
+            mMyAdapter.addItem("건의할거야!!",time + "시간 전" );
+            mMyAdapter.addItem("우에 엥 이거 고쳐죠ㅠㅜ",time + "시간 전" );
         }
 
         /* 리스트뷰에 어댑터 등록 */
