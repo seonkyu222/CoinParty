@@ -2,10 +2,11 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myPage_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_mypage"
+    tools:context=".fragmentMyPage"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-193dp"
     android:background="@color/white"
@@ -108,19 +109,21 @@
                 android:paddingRight="10px"
                 android:src="@drawable/ic_icon_mypage_bookmark_24px">
             </ImageView>
+
             <Button
                 style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/scrap"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="left"
                 android:paddingTop="50px"
-                android:onClick="onClick"
                 android:textSize="7pt"
                 android:textColor="#191919"
                 android:background="@color/white"
                 android:text="스크랩한 게시글"
                 >
             </Button>
+
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
