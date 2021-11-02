@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,16 +18,7 @@ public class board_list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.borad_list);
-
-        recyclerView = findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        List<ExpandableListAdapter.Item> data = new ArrayList<>();
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.HEADER, "STUDY"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "과제"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "학습노트"));
-        data.add(new ExpandableListAdapter.Item(ExpandableListAdapter.CHILD, "학습계획표"));
-
-        recyclerView.setAdapter(new ExpandableListAdapter(data));
+        Log.i("test", "list in board");
 
 
 
