@@ -12,6 +12,4 @@
         android:textSize="50sp"
         android:text="건의하기">
 
-    </TextView>
-
 </LinearLayout>

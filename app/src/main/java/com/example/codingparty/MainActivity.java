@@ -25,8 +25,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     Toolbar myToolbar;
     private ListView list1;
     private ListView list2;
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
 
 
     @SuppressLint({"NewApi", "WrongViewCast"})
@@ -100,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
 
         list1 = (ListView) findViewById(R.id.list1);
         List<String> data = new ArrayList<>();
