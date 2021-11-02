@@ -35,7 +35,7 @@ public class fragmentBoard extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Log.i(TAG, "board 클릭 in");
-        Intent intent = new Intent(getActivity().getApplicationContext(), board_list.class);
+        Intent intent = new Intent(getActivity().getApplicationContext(), BoardSuggest.class);
         startActivity(intent);
 
         }
