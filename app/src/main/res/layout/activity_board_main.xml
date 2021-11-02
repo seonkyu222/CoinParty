@@ -16,7 +16,7 @@
         android:layout_height="match_parent">
 
         <include
-            android:id="@+id/include"
+            android:id="@+id/include" 
             layout="@layout/app_bar_main"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,11 +31,12 @@
             android:paddingLeft="25dp"
             android:paddingRight="20dp">
 
-            <include layout="@layout/list_header" android:id="@+id/ll_study">
+<!--            <include layout="@layout/list_header" android:id="@+id/ll_study">-->
 
-            </include>
+<!--            </include>-->
 
             <LinearLayout
+                android:id="@+id/ll_contest"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:gravity="center_vertical"
@@ -59,6 +60,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_qna"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:gravity="center_vertical"
@@ -82,7 +84,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:backgroundTint="#000000"
                 android:id="@+id/ll_suggest"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
@@ -130,12 +131,6 @@
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/test"
-                android:layout_width="40dp"
-                android:layout_height="40dp">
-
-            </Button>
 
         </LinearLayout>
 
