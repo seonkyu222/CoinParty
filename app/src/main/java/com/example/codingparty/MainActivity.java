@@ -19,7 +19,6 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import org.jetbrains.annotations.NotNull;
-import android.widget.Toolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import java.util.ArrayList;
@@ -101,13 +100,6 @@ public class MainActivity extends AppCompatActivity {
         navigationView = (NavigationView)findViewById(R.id.navigation_view);
 
         BottomNavigationView navView = findViewById(R.id.bottom_navigation);
-        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-
-        menu1Fragment = new mainFragment(); //메인
-        menu2Fragment = new equipmentFragment(); //비품관리
-        menu3Fragment = new boardFragment(); //보드
-        menu4Fragment = new myPageFragment(); //마이페이지
                 return true;
             }
         });
