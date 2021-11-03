@@ -100,14 +100,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView)findViewById(R.id.navigation_view);
 
-        BottomNavigationView navView = findViewById(R.id.bottom_navigation);
-        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-
-        menu1Fragment = new mainFragment(); //메인
-        menu2Fragment = new equipmentFragment(); //비품관리
-        menu3Fragment = new boardFragment(); //보드
-        menu4Fragment = new myPageFragment(); //마이페이지
                 return true;
             }
         });
