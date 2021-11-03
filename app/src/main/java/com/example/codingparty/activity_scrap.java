@@ -19,9 +19,17 @@ public class activity_scrap extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrap);
+
+        adapter = new ScrapListAdapter();
+
         listView = (ListView) findViewById(R.id.list);
-        adapter = new ScrapListAdapter(activity_scrap.this);
         listView.setAdapter(adapter);
+
+        adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
+        adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
+        adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
+        adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
+        adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
 
         adapter.notifyDataSetChanged();
     }
