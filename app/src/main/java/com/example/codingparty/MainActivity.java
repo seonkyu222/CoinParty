@@ -15,14 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-<<<<<<< HEAD
 
-=======
-import androidx.fragment.app.Fragment;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
-import org.jetbrains.annotations.NotNull;
->>>>>>> 44d310fd6898c177ad729f35c81928c3d0fd3a0d
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -57,12 +50,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Log.e(TAG, "fdhgdgsgj");
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 왼쪽 상단 버튼 만들기
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_icon_sidebar_28px); //왼쪽 상단 버튼 아이콘 지정
+
+
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView)findViewById(R.id.navigation_view);
@@ -108,12 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-<<<<<<< HEAD
-
-
-=======
         BottomNavigationView navView = findViewById(R.id.bottom_navigation);
->>>>>>> 44d310fd6898c177ad729f35c81928c3d0fd3a0d
                 return true;
             }
         });
@@ -129,8 +119,6 @@ public class MainActivity extends AppCompatActivity {
         data.add("금도현");
         data.add("최이슬");
         adapter.notifyDataSetChanged();
-
-
 
     }
 
@@ -153,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             super.onBackPressed();
         }
+
     }
 
 };
