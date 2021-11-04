@@ -1,34 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_icon_sidebar_close_28px">
+
+    </ImageView>
 
     <ImageView
         android:id="@+id/iv_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/ic_icon_profile_designer_50px"
+        tools:ignore="VectorDrawableCompat">
+
+    </ImageView>
 
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text ="홍길동"
-        android:textSize="20sp"/>
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="120dp"
+        android:text="권지수"
+        android:textSize="20sp"></TextView>
 
     <TextView
         android:id="@+id/tv_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="20, 남자"
-        android:textSize="14sp"/>
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="150dp"
+        android:text="시각정보디자인과"
+        android:textSize="14sp"></TextView>
 
-</LinearLayout>
+    <View
+        android:id="@+id/division1"
+        android:layout_width="135pt"
+        android:layout_height="0.8pt"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="200dp"
+        android:background="@color/division1"
+        tools:ignore="MissingConstraints"></View>
+
+</RelativeLayout>
