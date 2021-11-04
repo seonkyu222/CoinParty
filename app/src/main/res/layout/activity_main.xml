@@ -364,6 +364,7 @@
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/my_navigation_items"
         tools:context=".bottom_navi">
+        <!--        labelVisibilityMode bottomNavi title 유무 설정 -->
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-</FrameLayout>
+    </FrameLayout>
