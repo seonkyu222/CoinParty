@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-public class BoardSuggest extends AppCompatActivity {
+public class SuggestMain extends AppCompatActivity {
 
     private ListView mListView;
 
