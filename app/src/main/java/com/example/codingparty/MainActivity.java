@@ -50,17 +50,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Log.e(TAG, "fdhgdgsgj");
+
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 왼쪽 상단 버튼 만들기
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_icon_sidebar_28px); //왼쪽 상단 버튼 아이콘 지정
 
-
-
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView)findViewById(R.id.navigation_view);
+
 
         BottomNavigationView navView = findViewById(R.id.bottom_navigation);
 
@@ -121,7 +122,6 @@ public class MainActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
