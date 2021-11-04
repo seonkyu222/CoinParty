@@ -1,4 +1,4 @@
-package com.example.codingparty;
+ package com.example.codingparty;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView)findViewById(R.id.navigation_view);
 
-
+        BottomNavigationView navView = findViewById(R.id.bottom_navigation);
                 return true;
             }
         });

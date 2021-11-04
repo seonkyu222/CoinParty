@@ -47,6 +47,7 @@
                 android:layout_marginEnd="173dp"
                 android:background="@drawable/ic_logo_appbar">
 
+
             </ImageView>
 
             <View
@@ -389,4 +390,4 @@
         <!--        labelVisibilityMode bottomNavi title 유무 설정 -->
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-</FrameLayout>
+    </FrameLayout>
