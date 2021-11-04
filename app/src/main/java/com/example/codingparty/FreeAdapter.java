@@ -28,22 +28,22 @@ public class FreeAdapter extends BaseAdapter {
 
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.suggest_listview_custom, parent, false);
+            convertView = inflater.inflate(R.layout.free_listview_custom, parent, false);
         }
 
-        TextView title = (TextView) convertView.findViewById(R.id.title);
-        TextView user = (TextView) convertView.findViewById(R.id.user);
-        TextView time = (TextView) convertView.findViewById(R.id.time);
-        TextView b_count = (TextView) convertView.findViewById(R.id.b_count);
-        TextView c_count = (TextView) convertView.findViewById(R.id.c_count);
+        TextView tv_title = (TextView) convertView.findViewById(R.id.title);
+        TextView tv_user = (TextView) convertView.findViewById(R.id.user);
+        TextView tv_time = (TextView) convertView.findViewById(R.id.time);
+        TextView tv_b_count = (TextView) convertView.findViewById(R.id.b_count);
+        TextView tv_c_count = (TextView) convertView.findViewById(R.id.c_count);
 
-        FreeItem item = getItem(position); // 아니 나 너 왜 안되는지 이해가 안 가 알 수가 없네?
+        FreeItem item = getItem(position);
 
-        title.setText(item.getF_title());
-        user.setText(item.getF_user());
-        time.setText(item.getF_time());
-        b_count.setText(item.getF_bCount());
-        c_count.setText(item.getF_cCount());
+        tv_title.setText(item.getF_title());
+        tv_user.setText(item.getF_user());
+        tv_time.setText(item.getF_time());
+        tv_b_count.setText(item.getF_bCount());
+        tv_c_count.setText(item.getF_cCount());
 
         return convertView;
     }
