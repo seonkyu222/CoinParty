@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        BottomNavigationView navView = findViewById(R.id.bottom_navigation);
+
         Log.e(TAG, "fdhgdgsgj");
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
@@ -62,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView)findViewById(R.id.navigation_view);
 
-
-        BottomNavigationView navView = findViewById(R.id.bottom_navigation);
 
         //프래그먼트 생성
         fragment_home = new fragmentHome();
@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
         list1 = (ListView) findViewById(R.id.list1);
         List<String> data = new ArrayList<>();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
@@ -122,9 +123,9 @@ public class MainActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
             case android.R.id.home:{ // 왼쪽 상단 버튼 눌렀을 때
                 drawerLayout.openDrawer(GravityCompat.START);
@@ -141,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             super.onBackPressed();
         }
-
     }
 
 };
