@@ -14,20 +14,20 @@
         android:layout_height="match_parent">
 
 
-        <ImageButton
-            android:background="@color/white"
-            android:id="@+id/iv_before"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
-            android:paddingLeft="0dp"
-            app:srcCompat="@drawable/ic_icon_before_28px"
-            tools:ignore="VectorDrawableCompat" />
+<!--        <ImageButton-->
+<!--            android:background="@color/white"-->
+<!--            android:id="@+id/iv_before"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:paddingLeft="0dp"-->
+<!--            app:srcCompat="@drawable/ic_icon_before_28px"-->
+<!--            tools:ignore="VectorDrawableCompat" />-->
 
         <TextView
             android:layout_width="157dp"

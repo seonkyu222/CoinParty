@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BoardSuggest"
+    tools:context=".SuggestMain"
     android:layout_marginHorizontal="25dp">
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:duplicateParentState="true"
         android:scrollbars="none">
+        
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="50sp"
         android:text="건의하기"></TextView>
 
+
     </ListView>
+
 </LinearLayout>

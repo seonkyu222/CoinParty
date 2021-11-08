@@ -13,11 +13,13 @@ import android.widget.Toast;
 
 import static android.content.ContentValues.TAG;
 
-public class board_main extends AppCompatActivity {
+public class BoardMain extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board_main);
+
+        Log.i("boardMain", "board main check");
 
 
 

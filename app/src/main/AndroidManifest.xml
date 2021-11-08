@@ -10,13 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CodingParty">
         <activity android:name=".BoardQna"></activity>
-        <activity android:name=".BoardSuggest" />
+        <activity android:name=".SuggestMain" />
         <activity android:name=".BoardContest" />
-        <activity android:name=".BoardFree" />
+        <activity android:name=".FreeMain" />
         <activity android:name=".EquipmentMain" />
         <activity android:name=".bottom_navi" />
-        <activity android:name=".activity_board_free" />
-        <activity android:name=".board_main" />
+        <activity android:name=".BoardMain" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity"/>
         <activity android:name=".activity_mypage"/>
