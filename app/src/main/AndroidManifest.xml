@@ -15,7 +15,6 @@
         <activity android:name=".FreeMain" />
         <activity android:name=".EquipmentMain" />
         <activity android:name=".bottom_navi" />
-        <activity android:name=".activity_board_free" />
         <activity android:name=".BoardMain" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity"/>
