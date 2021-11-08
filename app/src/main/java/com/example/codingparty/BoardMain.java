@@ -19,6 +19,8 @@ public class BoardMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board_main);
 
+        Log.i("boardMain", "board main check");
+
 
 
 
