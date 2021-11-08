@@ -48,7 +48,7 @@ public class SuggestAdapter extends BaseAdapter {
         return convertView;
     }
 
-    public void  addItem(String title, String time){
+    public void addItem(String title, String time){
         SuggestItem suggestItem = new SuggestItem();
 
         suggestItem.setTitle(title);

@@ -9,12 +9,20 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-193dp">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/toolbar_scrap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></include>
+<!--    <include-->
+<!--        android:id="@+id/toolbar"-->
+<!--        layout="@layout/toolbar_scrap"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"></include>-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/division1"
+        android:layout_marginBottom="-27dp"
+        android:elevation="5dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
