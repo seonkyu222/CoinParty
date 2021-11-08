@@ -12,12 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none">
+<<<<<<< HEAD
         
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="50sp"
         android:text="건의하기"></TextView>
+=======
+
+>>>>>>> 5a436937d3da218b76411ee005351178c03ca1de
 
     </ListView>
 
