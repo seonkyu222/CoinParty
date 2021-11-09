@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class SuggestMain extends AppCompatActivity {
 
@@ -19,6 +22,8 @@ public class SuggestMain extends AppCompatActivity {
         mListView = (ListView) findViewById(R.id.listView);
 
         dataSetting();
+
+        
     }
 
     private void dataSetting(){
@@ -36,6 +41,8 @@ public class SuggestMain extends AppCompatActivity {
         /* 리스트뷰에 어댑터 등록 */
         mListView.setAdapter(mMyAdapter);
     }
+
+
 
 
 
