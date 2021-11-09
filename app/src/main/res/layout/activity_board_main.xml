@@ -9,147 +9,132 @@
     tools:context=".BoardMain"
     android:background="@color/white">
 
-
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <include
+            android:id="@+id/include"
+            layout="@layout/app_bar_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        </androidx.recyclerview.widget.RecyclerView>
+        </include>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp">
+
+<!--            <include layout="@layout/list_header" android:id="@+id/ll_study">-->
+
+<!--            </include>-->
+
+            <LinearLayout
+                android:id="@+id/ll_contest"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_line">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_icon_board_dot_18px">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="공모전"
+                    android:textColor="#191919">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_qna"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_line">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_icon_board_dot_18px">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Q&amp;A"
+                    android:textColor="#191919">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_line">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_icon_board_dot_18px">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="건의하기"
+                    android:textColor="#191919">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_free"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_line">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_icon_board_dot_18px">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="자유게시판"
+                    android:textColor="#191919">
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
 
     </LinearLayout>
-
-
-<!--    <LinearLayout-->
-<!--        android:orientation="vertical"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-
-<!--        <include-->
-<!--            android:id="@+id/include"-->
-<!--            layout="@layout/app_bar_main"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
-
-<!--        </include>-->
-
-<!--        <LinearLayout-->
-<!--            android:orientation="vertical"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:paddingLeft="25dp"-->
-<!--            android:paddingRight="20dp">-->
-
-<!--&lt;!&ndash;            <include layout="@layout/list_header" android:id="@+id/ll_study">&ndash;&gt;-->
-
-<!--&lt;!&ndash;            </include>&ndash;&gt;-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/ll_contest"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="64dp"-->
-<!--                android:gravity="center_vertical"-->
-<!--                android:background="@drawable/list_line">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_icon_board_dot_18px">-->
-
-<!--                </ImageView>-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="10dp"-->
-<!--                    android:text="공모전"-->
-<!--                    android:textColor="#191919">-->
-<!--                </TextView>-->
-
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/ll_qna"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="64dp"-->
-<!--                android:gravity="center_vertical"-->
-<!--                android:background="@drawable/list_line">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_icon_board_dot_18px">-->
-
-<!--                </ImageView>-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="10dp"-->
-<!--                    android:text="Q&amp;A"-->
-<!--                    android:textColor="#191919">-->
-<!--                </TextView>-->
-
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/ll_suggest"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="64dp"-->
-<!--                android:gravity="center_vertical"-->
-<!--                android:background="@drawable/list_line">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_icon_board_dot_18px">-->
-
-<!--                </ImageView>-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="10dp"-->
-<!--                    android:text="건의하기"-->
-<!--                    android:textColor="#191919">-->
-<!--                </TextView>-->
-
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:id="@+id/ll_free"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="64dp"-->
-<!--                android:gravity="center_vertical"-->
-<!--                android:background="@drawable/list_line">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/ic_icon_board_dot_18px">-->
-
-<!--                </ImageView>-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="10dp"-->
-<!--                    android:text="자유게시판"-->
-<!--                    android:textColor="#191919">-->
-<!--                </TextView>-->
-
-<!--            </LinearLayout>-->
-
-
-<!--        </LinearLayout>-->
-
-
-<!--    </LinearLayout>-->
 
 
 
