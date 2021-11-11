@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kategorie">
+        <item>과제</item>
+        <item>학습노트</item>
+        <item>학습계획표</item>
+        <item>공모전</item>
+        <item>Q&amp;A</item>
+        <item>건의하기</item>
+        <item>자유게시판</item>
+    </string-array>
+
+</resources>
