@@ -2,54 +2,129 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginHorizontal="25dp"
     tools:context=".FreeMain">
 
-    <LinearLayout
+
+<!--    <include-->
+<!--        android:id="@+id/free_toolbar"-->
+<!--        layout="@layout/toolbar_free">-->
+
+<!--    </include>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/free_toolbar"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="78dp">
+        android:layout_height="70dp"
+        android:background="@drawable/list_line"
+        android:layout_marginHorizontal="25dp"
+        tools:context=".FreeToolbar">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginHorizontal="8dp"
-            android:background="@drawable/free_round">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/ic_icon_before_28px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자유게시판"
+            android:textColor="#191919"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pius"
+            app:layout_constraintStart_toEndOf="@+id/back"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/pius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/ic_icon_appbar_add_28px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="4dp"
-                android:src="@drawable/ic_icon_search_20px">
-            </ImageView>
-
-            <EditText
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:background="#00000000"
-                android:hint="검색어를 입력해주세요"
-                android:textSize="12sp"
-                android:textColorHint="#999999">
-            </EditText>
-
-        </LinearLayout>
-    </LinearLayout>
-
-
-    <ListView
-        android:id="@+id/free_list"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:fillViewport="true">
 
-    </ListView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="25dp"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:backgroundTint="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/free_round">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_icon_search_20px">
+                    </ImageView>
+
+                    <EditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="#00000000"
+                        android:hint="검색어를 입력해주세요"
+                        android:textSize="12sp"
+                        android:textColorHint="#999999">
+                    </EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/free_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+            </ListView>
+
+        </FrameLayout>
+
+
+    </ScrollView>
+
+
+
 
 </LinearLayout>
