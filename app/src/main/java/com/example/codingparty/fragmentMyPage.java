@@ -64,4 +64,5 @@ public class fragmentMyPage extends Fragment implements View.OnClickListener {
                 break;
         }
     }
+
 }
