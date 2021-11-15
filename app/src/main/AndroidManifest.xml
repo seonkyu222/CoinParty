@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CodingParty">
-        <activity android:name=".PostItem"></activity>
+        <activity android:name=".PostFileClick"></activity>
+        <activity android:name=".PostItem" />
         <activity android:name=".AddTextToolbar" />
         <activity android:name=".AddText" />
         <activity android:name=".SuggestToolbar" />
