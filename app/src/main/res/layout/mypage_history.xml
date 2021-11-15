@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Mypage_Option"
+    tools:context=".Mypage_History"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-193dp">
 
@@ -27,7 +27,7 @@
             android:textColor="#000000"
             android:textSize="17dp"
             android:gravity="center"
-            android:text="설정"
+            android:text="나의 활동"
             ></TextView>
     </androidx.appcompat.widget.Toolbar>
 
