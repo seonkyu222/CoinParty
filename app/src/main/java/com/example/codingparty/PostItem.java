@@ -19,6 +19,7 @@ public class PostItem extends AppCompatActivity {
         click_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 onBackPressed();
             }
         });

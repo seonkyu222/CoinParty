@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="25dp"
     tools:context=".FreeMain">
 
 
@@ -22,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@drawable/list_line"
+        android:layout_marginHorizontal="25dp"
         tools:context=".FreeToolbar">
 
         <ImageButton
@@ -63,47 +63,68 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="78dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginHorizontal="8dp"
-            android:background="@drawable/free_round">
-
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="4dp"
-                android:src="@drawable/ic_icon_search_20px">
-            </ImageView>
-
-            <EditText
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:background="#00000000"
-                android:hint="검색어를 입력해주세요"
-                android:textSize="12sp"
-                android:textColorHint="#999999">
-            </EditText>
-
-        </LinearLayout>
-    </LinearLayout>
-
-
-    <ListView
-        android:id="@+id/free_list"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:fillViewport="true">
 
-    </ListView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="25dp"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:backgroundTint="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/free_round">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_icon_search_20px">
+                    </ImageView>
+
+                    <EditText
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="#00000000"
+                        android:hint="검색어를 입력해주세요"
+                        android:textSize="12sp"
+                        android:textColorHint="#999999">
+                    </EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/free_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+            </ListView>
+
+        </FrameLayout>
+
+
+    </ScrollView>
+
+
+
 
 </LinearLayout>
