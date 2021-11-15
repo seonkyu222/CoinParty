@@ -18,23 +18,20 @@ public class Mypage_Record extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mypage_record);
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 왼쪽 상단 버튼 만들기
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_icon_before_28px); //왼쪽 상단 버튼 아이콘 지정
     }
 
+
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.home:{
-
-                Intent intent = new Intent(getApplicationContext(),activity_mypage.class);
-                startActivity(intent);
-                return true;
-            }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            Intent intent = new Intent(getApplicationContext(), activity_mypage.class);
+            startActivity(intent);
+            return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
