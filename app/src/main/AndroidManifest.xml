@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CodingParty">
-        <activity android:name=".PostFileClick"></activity>
+        <activity android:name=".PostRemove"></activity>
+        <activity android:name=".PostFileClick" />
         <activity android:name=".PostItem" />
         <activity android:name=".AddTextToolbar" />
         <activity android:name=".AddText" />
@@ -25,11 +26,10 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activity_mypage" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".activity_mypage"/>
-        <activity android:name=".Mypage_Scrap"/>
-        <activity android:name=".Mypage_Option"/>
-
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity_mypage" />
+        <activity android:name=".Mypage_Scrap" />
+        <activity android:name=".Mypage_Option" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
