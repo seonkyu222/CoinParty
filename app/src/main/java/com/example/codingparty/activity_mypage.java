@@ -12,7 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class activity_mypage extends AppCompatActivity {
 
     Button test;
-    TextView text;
+    TextView text1;
+    TextView text2;
 
     @Override
     protected void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
@@ -20,12 +21,21 @@ public class activity_mypage extends AppCompatActivity {
         setContentView(R.layout.activity_mypage);
 
         test = (Button) findViewById(R.id.scrap);
-        text = (TextView) findViewById(R.id.option);
+        text1 = (TextView) findViewById(R.id.option);
+        text2 = (TextView) findViewById(R.id.history);
 
-        text.setOnClickListener(new View.OnClickListener() {
+        text1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Mypage_Option.class);
+                startActivity(intent);
+            }
+        });
+
+        text2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Mypage_History.class);
                 startActivity(intent);
             }
         });

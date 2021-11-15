@@ -24,10 +24,10 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activity_mypage" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".activity_mypage"/>
         <activity android:name=".Mypage_Scrap"/>
         <activity android:name=".Mypage_Option"/>
+        <activity android:name=".Mypage_History"/>
+        <activity android:name=".Mypage_Record"/>
 
         <activity
             android:name=".SplashActivity"
