@@ -8,14 +8,15 @@
     android:orientation="vertical"
     >
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/ic_icon_sidebar_close_28px">
 
-    </ImageView>
+    </androidx.appcompat.widget.AppCompatImageButton>
 
     <ImageView
         android:id="@+id/iv_image"

@@ -4,10 +4,13 @@
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView list2;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    ImageButton backBtn_main;
 
 
     @SuppressLint({"NewApi", "WrongViewCast"})
@@ -58,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 왼쪽 상단 버튼 만들기
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_icon_sidebar_28px); //왼쪽 상단 버튼 아이콘 지정
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 왼쪽 상단 버튼 만들기
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView)findViewById(R.id.navigation_view);
@@ -124,24 +128,29 @@ public class MainActivity extends AppCompatActivity {
 
     }
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()){
-            case android.R.id.home:{ // 왼쪽 상단 버튼 눌렀을 때
-                drawerLayout.openDrawer(GravityCompat.START);
-                return true;
-            }
-        }
-        return super.onOptionsItemSelected(item);
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //return super.onCreateOptionsMenu(menu);
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.main_notification, menu);
+        return true;
     }
 
     @Override
-    public void onBackPressed() { //뒤로가기 했을 때
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //return super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case android.R.id.home: { // 왼쪽 상단 버튼 눌렀을 때
+                drawerLayout.openDrawer(GravityCompat.START);
+                return true;
+            }
+            case R.id.action_settings:
+                // User chose the "Settings" item, show the app settings UI...
+                drawerLayout.openDrawer(GravityCompat.END);
+                return true;
+
+
         }
+        return super.onOptionsItemSelected(item);
     }
 
 };
