@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/div1"
+        android:checkableBehavior="single">
+    <item
+        android:icon="@drawable/ic_icon_notice_44px"
+        android:id="@+id/item_main"
+        android:title="새로운 공지가 등록되었습니다." />
+    </group>
+
+    <group
+        android:id="@+id/div2"
+        android:checkableBehavior="single">
+    <item
+        android:icon="@drawable/ic_icon_calender_loop"
+        android:id="@+id/item_notice"
+        android:title="일정이 있습니다." />
+    </group>
+
+    <group
+        android:id="@+id/div3"
+        android:checkableBehavior="single">
+    <item
+        android:icon="@drawable/ic_icon_comment_send_24px"
+        android:id="@+id/item_calendar"
+        android:title="게시글에 새로운 댓글이 있습니다." />
+    </group>
+
+    <group
+        android:id="@+id/div4"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/item_check"
+        android:title="금도현님이 회원님을 언급했습니다." />
+    </group>
+
+    <group
+        android:id="@+id/div5"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/item_management"
+        android:title="금도현님이 회원님을 언급했습니다." />
+    </group>
+
+    <group
+        android:id="@+id/div6"
+        android:checkableBehavior="single">
+    <item
+        android:icon="@drawable/ic_icon_equipment_44px"
+        android:id="@+id/item_post"
+        android:title="반납 알림이 있습니다." />
+    </group>
+
+</menu>

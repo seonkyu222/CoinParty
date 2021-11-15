@@ -23,10 +23,10 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="?attr/actionBarSize"
                 android:layout_alignBottom="@+id/division1"
                 android:layout_marginBottom="-27dp"
-                >
+                tools:ignore="NotSibling">
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -42,7 +42,18 @@
                 android:background="@drawable/ic_logo_appbar">
             </ImageView>
 
+
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
             <View
+                android:layout_marginRight="220dp"
+                android:layout_marginBottom="540dp"
                 android:id="@+id/division1"
                 android:layout_width="0.8pt"
                 android:layout_height="80px"
@@ -50,27 +61,11 @@
                 android:elevation="5dp"
                 android:paddingLeft="20px"
                 android:paddingRight="20px"
-                tools:ignore="MissingConstraints">
-            </View>
-
-        </RelativeLayout>
-
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/navigation_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:fitsSystemWindows="true"
-            app:headerLayout="@layout/navi_header"
-            app:menu="@menu/navi_menu" >
-        </com.google.android.material.navigation.NavigationView>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"></View>
 
             <TextView
                 android:layout_marginTop="50dp"
@@ -344,6 +339,29 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/navi_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:menu="@menu/navi_menu">
+        </com.google.android.material.navigation.NavigationView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_marginEnd="-64dp"
+            android:id="@+id/navigation_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/notification_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:menu="@menu/notification_menu">
+        </com.google.android.material.navigation.NavigationView>
 
     </androidx.drawerlayout.widget.DrawerLayout>
 
