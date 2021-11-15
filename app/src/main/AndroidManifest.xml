@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CodingParty">
-        <activity android:name=".BoardQna"></activity>
+        <activity android:name=".PostItem"></activity>
+        <activity android:name=".AddTextToolbar" />
+        <activity android:name=".AddText" />
+        <activity android:name=".SuggestToolbar" />
+        <activity android:name=".FreeToolbar" />
+        <activity android:name=".BoardQna" />
         <activity android:name=".SuggestMain" />
         <activity android:name=".BoardContest" />
         <activity android:name=".FreeMain" />
@@ -17,10 +22,13 @@
         <activity android:name=".bottom_navi" />
         <activity android:name=".BoardMain" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity_mypage" />
         <activity android:name=".MainActivity"/>
         <activity android:name=".activity_mypage"/>
         <activity android:name=".Mypage_Scrap"/>
         <activity android:name=".Mypage_Option"/>
+
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
