@@ -71,7 +71,7 @@ public class FreeMain extends AppCompatActivity {
         name.add("김민영");
         name.add("설호성");
 
-        freeAdapter.addItem("어제 내 세상이 무너졌어",  "홍성호", "2분 전", "3", "500");
+        freeAdapter.addItem("우리 집 고양이 이야기 좀 들어봐",  "서설", "2분 전", "3", "500");
         int time = 0;
         for(int i = 0; i < 10; i++){
             freeAdapter.addItem("왜 이러지의 연속",  "웅냥나나", i + "시간 전", i + "", (i+2) + "");
