@@ -29,6 +29,11 @@ public class fragmentMyPage extends Fragment implements View.OnClickListener {
         TextView txtOption = (TextView) view.findViewById(R.id.option);
         txtOption.setOnClickListener(this::onClick);
 
+        TextView txtHistory = (TextView) view.findViewById(R.id.history);
+        txtHistory.setOnClickListener(this::onClick);
+
+        TextView txtRecord = (TextView) view.findViewById(R.id.record);
+        txtRecord.setOnClickListener(this::onClick);
 
 
         return view;
@@ -43,11 +48,20 @@ public class fragmentMyPage extends Fragment implements View.OnClickListener {
                 startActivity(intent_s);
                 break;
 
-            case R.id.option: {
-                Intent intent = new Intent(getActivity().getApplicationContext(), Mypage_Option.class);
-                startActivity(intent);
+            case R.id.option:
+                Intent intent_o = new Intent(getActivity().getApplicationContext(), Mypage_Option.class);
+                startActivity(intent_o);
                 break;
-            }
+
+            case R.id.history:
+                Intent intent_h = new Intent(getActivity().getApplicationContext(), Mypage_History.class);
+                startActivity(intent_h);
+                break;
+
+            case R.id.record:
+                Intent intent_r = new Intent(getActivity().getApplicationContext(), Mypage_Record.class);
+                startActivity(intent_r);
+                break;
         }
     }
 }

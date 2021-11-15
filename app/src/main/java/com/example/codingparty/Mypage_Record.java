@@ -12,12 +12,12 @@ import androidx.appcompat.widget.Toolbar;
 
 import org.w3c.dom.Text;
 
-public class Mypage_Option extends AppCompatActivity {
+public class Mypage_Record extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mypage_option);
+        setContentView(R.layout.mypage_record);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 왼쪽 상단 버튼 만들기
@@ -38,3 +38,4 @@ public class Mypage_Option extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
