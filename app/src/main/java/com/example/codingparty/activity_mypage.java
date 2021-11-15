@@ -22,7 +22,7 @@ public class activity_mypage extends AppCompatActivity {
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), activity_scrap.class);
+                Intent intent = new Intent(getApplicationContext(), Mypage_Scrap.class);
                 startActivity(intent);
             }
         });
@@ -30,7 +30,7 @@ public class activity_mypage extends AppCompatActivity {
     }
 
     public void onClick(View view){
-        Intent intent = new Intent(this, activity_scrap.class);
+        Intent intent = new Intent(this, Mypage_Scrap.class);
         startActivity(intent);
     }
 }

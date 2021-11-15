@@ -24,7 +24,11 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activity_mypage" />
-        <activity android:name=".activity_scrap" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".activity_mypage"/>
+        <activity android:name=".Mypage_Scrap"/>
+        <activity android:name=".Mypage_Option"/>
+
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">

@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -26,6 +26,9 @@ public class fragmentMyPage extends Fragment implements View.OnClickListener {
         Button btnScrap = (Button) view.findViewById(R.id.scrap);
         btnScrap.setOnClickListener(this::onClick);
 
+        TextView txtOption = (TextView) view.findViewById(R.id.option);
+        txtOption.setOnClickListener(this::onClick);
+
 
 
         return view;
@@ -34,11 +37,17 @@ public class fragmentMyPage extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.scrap:
-                Intent intent_s = new Intent(getActivity().getApplicationContext(),activity_scrap.class);
+                Intent intent_s = new Intent(getActivity().getApplicationContext(), Mypage_Scrap.class);
                 startActivity(intent_s);
                 break;
+
+            case R.id.option: {
+                Intent intent = new Intent(getActivity().getApplicationContext(), Mypage_Option.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 }

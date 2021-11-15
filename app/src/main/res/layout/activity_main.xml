@@ -17,7 +17,6 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:elevation="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
@@ -27,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/division1"
                 android:layout_marginBottom="-27dp"
-                android:elevation="5dp">
+                >
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -51,8 +50,8 @@
                 android:elevation="5dp"
                 android:paddingLeft="20px"
                 android:paddingRight="20px"
-                tools:ignore="MissingConstraints"></View>
-
+                tools:ignore="MissingConstraints">
+            </View>
 
         </RelativeLayout>
 
@@ -63,7 +62,8 @@
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
             app:headerLayout="@layout/navi_header"
-            app:menu="@menu/navi_menu" />
+            app:menu="@menu/navi_menu" >
+        </com.google.android.material.navigation.NavigationView>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -71,13 +71,6 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
-            <!--                    <include-->
-            <!--                    android:id="@+id/include"-->
-            <!--                    layout="@layout/app_bar_main"-->
-            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                    app:layout_constraintStart_toStartOf="parent"-->
-            <!--                    app:layout_constraintTop_toTopOf="parent">-->
-            <!--                    </include>-->
 
             <TextView
                 android:layout_marginTop="50dp"
@@ -117,9 +110,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints"></TextView>
+                tools:ignore="MissingConstraints">
+            </TextView>
 
             <View
                 android:id="@+id/calandar_border_view"
@@ -367,4 +360,4 @@
         <!--        labelVisibilityMode bottomNavi title 유무 설정 -->
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    </FrameLayout>
+</FrameLayout>
