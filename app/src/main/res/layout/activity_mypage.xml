@@ -234,7 +234,7 @@
         android:layout_gravity="bottom"
         android:background="#FFFFFF"
         app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/my_navigation_items"
+        app:menu="@menu/bottom_items"
         tools:context=".bottom_navi"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </FrameLayout>

@@ -373,7 +373,7 @@
         android:layout_gravity="bottom"
         android:background="#FFFFFF"
         app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/my_navigation_items"
+        app:menu="@menu/bottom_items"
         tools:context=".bottom_navi">
         <!--        labelVisibilityMode bottomNavi title 유무 설정 -->
     </com.google.android.material.bottomnavigation.BottomNavigationView>

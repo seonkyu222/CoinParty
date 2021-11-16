@@ -8,7 +8,7 @@
     android:layout_gravity="bottom"
     android:background="#FFFFFF"
     tools:context=".bottom_navi"
-    app:menu="@menu/my_navigation_items"
+    app:menu="@menu/bottom_items"
     app:labelVisibilityMode="unlabeled">
 
 

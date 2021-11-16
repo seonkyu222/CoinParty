@@ -19,6 +19,7 @@ public class PostFileClick extends AppCompatActivity {
         click_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 onBackPressed();
             }
         });
