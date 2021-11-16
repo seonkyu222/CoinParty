@@ -511,7 +511,7 @@
                         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
                     <EditText
-                        android:layout_width="270dp"
+                        android:layout_width="245dp"
                         android:layout_height="16dp"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="10dp"

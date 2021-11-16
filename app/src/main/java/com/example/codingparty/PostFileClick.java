@@ -3,7 +3,9 @@ package com.example.codingparty;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
 
 public class PostFileClick extends AppCompatActivity {
@@ -15,12 +17,7 @@ public class PostFileClick extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.post_file_click);
 
-        click_no = (TextView) findViewById(R.id.textView5);
-        click_no.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+        Log.i("File image", "plzzzzz");
+
     }
 }
