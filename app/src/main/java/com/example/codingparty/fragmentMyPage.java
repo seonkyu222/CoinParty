@@ -62,6 +62,11 @@ public class fragmentMyPage extends Fragment implements View.OnClickListener {
                 Intent intent_r = new Intent(getActivity().getApplicationContext(), Mypage_Record.class);
                 startActivity(intent_r);
                 break;
+
+            case R.id.home:
+                Intent intent_a = new Intent(getActivity().getApplicationContext(), activity_mypage.class);
+                startActivity(intent_a);
+                break;
         }
     }
 
