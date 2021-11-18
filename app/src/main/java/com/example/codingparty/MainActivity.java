@@ -19,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -27,7 +28,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener, FragmentCallback{
 
 
     // 바텀 네비게이션
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     ImageButton backBtn_main;
 
+    //드로어 메뉴 프래그먼트
+    Fragment fragment1, fragment2, fragment3;
 
     @SuppressLint({"NewApi", "WrongViewCast"})
     @Override
@@ -69,6 +73,13 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView)findViewById(R.id.navigation_view);
 
+        NavigationView navigationView = findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this); // 리스너 설정
+
+        //드로어 메뉴 프래그먼트 1,2,3
+        fragment1 = new Fragment1();
+        fragment2 = new Fragment2();
+        fragment3 = new Fragment3();
 
         //프래그먼트 생성
         fragment_home = new fragmentHome();
@@ -129,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //return super.onCreateOptionsMenu(menu);
@@ -155,4 +167,54 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.item_main) {
+            onChangedFragment(1, null);
+        } else if (id == R.id.item_notice) {
+            onChangedFragment(2, null);
+        } else if (id == R.id.item_calendar) {
+            onChangedFragment(3, null);
+        }
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    @Override
+    public void onChangedFragment(int position, Bundle bundle) {
+        Fragment fragment = null;
+
+        switch (position){
+            case 1:
+                fragment = fragment1;
+                toolbar.setTitle("");
+                break;
+            case 2:
+                fragment = fragment2;
+                toolbar.setTitle("");
+                break;
+            case 3:
+                fragment = fragment3;
+                toolbar.setTitle("");
+                break;
+            default:
+                break;
+        }
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
+    }
 };
