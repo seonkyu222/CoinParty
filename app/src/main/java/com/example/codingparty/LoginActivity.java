@@ -29,10 +29,10 @@ public class LoginActivity extends AppCompatActivity {
         user_id.addTextChangedListener(loginTextWatcher);
         user_pwd.addTextChangedListener(loginTextWatcher);
 
-        login_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            login_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });
