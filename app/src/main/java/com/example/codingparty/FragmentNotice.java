@@ -9,12 +9,12 @@ import androidx.fragment.app.Fragment;
 
 import org.jetbrains.annotations.Nullable;
 
-public class Fragment3 extends Fragment {
+public class FragmentNotice extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) getLayoutInflater().inflate(R.layout.fragment3, container, false);
+        ViewGroup rootView = (ViewGroup) getLayoutInflater().inflate(R.layout.fragment_notice, container, false);
         return rootView;
     }
 }

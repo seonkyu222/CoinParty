@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment;
 
 import org.jetbrains.annotations.Nullable;
 
-public class Fragment1 extends Fragment {
+public class FragmentMain extends Fragment {
 
     @Nullable
     @Override

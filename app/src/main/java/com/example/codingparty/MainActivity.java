@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity
     ImageButton backBtn_main;
 
     //드로어 메뉴 프래그먼트
-    Fragment fragment1, fragment2, fragment3;
+    Fragment fragment_Main, fragment_Notice, fragment_Calendar, fragment_Check;
 
     @SuppressLint({"NewApi", "WrongViewCast"})
     @Override
@@ -75,10 +75,12 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this); // 리스너 설정
 
-        //드로어 메뉴 프래그먼트 1,2,3
-        fragment1 = new Fragment1();
-        fragment2 = new Fragment2();
-        fragment3 = new Fragment3();
+        //드로어 메뉴 프래그먼트
+        fragment_Main = new FragmentMain();
+        fragment_Notice = new FragmentNotice();
+        fragment_Calendar = new FragmentCalendar();
+        fragment_Check = new FragmentCheck();
+
 
         //프래그먼트 생성
         fragment_home = new fragmentHome();
@@ -186,6 +188,8 @@ public class MainActivity extends AppCompatActivity
             onChangedFragment(2, null);
         } else if (id == R.id.item_calendar) {
             onChangedFragment(3, null);
+        } else if (id == R.id.item_check) {
+            onChangedFragment(4, null);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -199,15 +203,19 @@ public class MainActivity extends AppCompatActivity
 
         switch (position){
             case 1:
-                fragment = fragment1;
+                fragment = fragment_Main;
                 toolbar.setTitle("");
                 break;
             case 2:
-                fragment = fragment2;
+                fragment = fragment_Notice;
                 toolbar.setTitle("");
                 break;
             case 3:
-                fragment = fragment3;
+                fragment = fragment_Calendar;
+                toolbar.setTitle("");
+                break;
+            case 4:
+                fragment = fragment_Check;
                 toolbar.setTitle("");
                 break;
             default:

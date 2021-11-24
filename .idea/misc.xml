@@ -7,6 +7,7 @@
         <entry key="..\:/CoinParty/app/src/main/res/drawable/border_round.xml" value="0.4" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/border_round2.xml" value="0.14583333333333334" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/border_round3.xml" value="0.13125" />
+        <entry key="..\:/CoinParty/app/src/main/res/drawable/border_round4.xml" value="0.12685185185185185" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/free_round.xml" value="0.15787037037037038" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_appbar_add_28px.xml" value="0.26979166666666665" />
         <entry key="..\:/CoinParty/app/src/main/res/drawable/ic_icon_appbar_notification_28px.xml" value="0.26979166666666665" />
@@ -63,16 +64,22 @@
         <entry key="..\:/CoinParty/app/src/main/res/drawable/upper_shadow_todo.xml" value="0.14583333333333334" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/activity_board_main.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/activity_bottom_navi.xml" value="0.22546296296296298" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/activity_equipment_main.xml" value="0.22546296296296298" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/activity_login.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/app_bar_main.xml" value="0.5043177892918825" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/border_round.xml" value="0.2390625" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/content_main.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/drawerlayout.xml" value="0.22546296296296298" />
-        <entry key="..\:/CoinParty/app/src/main/res/layout/fragment1.xml" value="0.23657407407407408" />
-        <entry key="..\:/CoinParty/app/src/main/res/layout/fragment2.xml" value="0.22546296296296298" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/fragment1.xml" value="0.4" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/fragment2.xml" value="0.4" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/fragment3.xml" value="0.22546296296296298" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/fragment_calendar.xml" value="0.22546296296296298" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/fragment_check.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/fragment_gallery.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/fragment_home.xml" value="0.22546296296296298" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/fragment_management.xml" value="0.22546296296296298" />
+        <entry key="..\:/CoinParty/app/src/main/res/layout/fragment_notice.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/fragment_slideshow.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/header.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/layout/header_menu.xml" value="0.22546296296296298" />
@@ -93,6 +100,7 @@
         <entry key="..\:/CoinParty/app/src/main/res/menu/drawerlayout.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/menu/main_menu.xml" value="0.14814814814814814" />
         <entry key="..\:/CoinParty/app/src/main/res/menu/main_navigationmenu.xml" value="0.2125" />
+        <entry key="..\:/CoinParty/app/src/main/res/menu/main_notification.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/menu/my_navigation_items.xml" value="0.15601851851851853" />
         <entry key="..\:/CoinParty/app/src/main/res/menu/navi_menu.xml" value="0.22546296296296298" />
         <entry key="..\:/CoinParty/app/src/main/res/menu/navigation_menu.xml" value="0.16" />

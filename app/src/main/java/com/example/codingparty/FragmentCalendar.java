@@ -9,12 +9,12 @@ import androidx.fragment.app.Fragment;
 
 import org.jetbrains.annotations.Nullable;
 
-public class Fragment2 extends Fragment {
+public class FragmentCalendar extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) getLayoutInflater().inflate(R.layout.fragment2, container, false);
+        ViewGroup rootView = (ViewGroup) getLayoutInflater().inflate(R.layout.fragment_calendar, container, false);
         return rootView;
     }
 }

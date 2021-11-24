@@ -13,6 +13,10 @@
     <color name="main3">#EDEDED</color>
     <color name="main4">#FF8181</color>
     <color name="main5">#EBF8FF</color>
+    <color name="noticeText">#999999</color>
+    <color name="noticeText2">#191919</color>
+    <color name="checkText">#505050</color>
+    <color name="checkRound">#3677DC</color>
     <color name="division1">#DBDBDB</color>
     <color name="loginBlue">#9DCDFF</color>
     <color name="buttonGray">#DBDBDB</color>
