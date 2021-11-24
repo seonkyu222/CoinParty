@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="공지사항"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_icon_before_28px">
+    </ImageView>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:background="@color/division1"
+        android:layout_width="340dp"
+        android:layout_height="0.8pt">
+    </View>
+
+    <TextView
+        android:textSize="12dp"
+        android:textColor="@color/noticeText"
+        android:text="2021/01/13 수 16:10"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:textSize="16dp"
+        android:textColor="@color/noticeText2"
+        android:text="2월 개발계획 공지"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:textSize="16dp"
+        android:textColor="@color/noticeText2"
+        android:text="2월 개발계획 공지합니다.\n \n2월 1일 어쩌구~하시고
+        \n2월 16일부터 어쩌구~하시고\n아 2월 17일 수강신청인데
+        \n나 이번에 교양못들으면 어떡하지\n졸업해야되는데 \n \n암튼 공지임"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/noticeText2"
+        android:text="    목록보기"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="160dp"
+        android:background="@drawable/border_round2"
+        android:layout_width="114dp"
+        android:layout_height="34dp">
+    </TextView>
+
+    <ImageView
+        android:layout_marginTop="-25dp"
+        android:layout_marginLeft="235dp"
+        android:background="@drawable/ic_icon_button_list_18px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+</LinearLayout>
