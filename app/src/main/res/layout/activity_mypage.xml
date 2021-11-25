@@ -107,6 +107,7 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="50px"
                 android:paddingRight="10px"
+                android:paddingLeft="20px"
                 android:src="@drawable/ic_icon_mypage_bookmark_24px">
             </ImageView>
 
@@ -141,6 +142,7 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="50px"
                 android:paddingRight="10px"
+                android:paddingLeft="20px"
                 android:src="@drawable/ic_icon_mypage_list_24px">
             </ImageView>
             <TextView
@@ -173,6 +175,7 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="50px"
                 android:paddingRight="10px"
+                android:paddingLeft="20px"
                 android:src="@drawable/ic_icon_mypage_history_24px">
             </ImageView>
             <TextView
@@ -204,6 +207,7 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="50px"
                 android:paddingRight="10px"
+                android:paddingLeft="20px"
                 android:src="@drawable/ic_icon_ypage_setting_24px">
             </ImageView>
             <TextView
