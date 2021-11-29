@@ -32,6 +32,9 @@ public class Mypage_Scrap extends AppCompatActivity {
         adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
         adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
         adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
+        adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
+        adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
+        adapter.addItem("어제 내 세상이 무너졌어","임진우ㆍ1시간 전");
 
         adapter.notifyDataSetChanged();
 
